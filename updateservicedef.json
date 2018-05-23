@@ -7,6 +7,6 @@
         "minimumHealthyPercent": 100
     },
     "healthCheckGracePeriodSeconds": 0,
-    "desiredCount": 3,
+    "desiredCount": 6,
     "forceNewDeployment": true
 }
