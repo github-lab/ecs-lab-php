@@ -1,0 +1,13 @@
+{
+    "serviceName": "ecslabphpsvc",
+    "taskDefinition": "ecslabphp",
+    "loadBalancers": [
+        {
+            "loadBalancerName": "EC2Contai-EcsElast-S06278JGSJCM",
+            "containerName": "ecslabphp",
+            "containerPort": 80
+        }
+    ],
+    "desiredCount": 10,
+    "role": "ecsServiceRole"
+}
