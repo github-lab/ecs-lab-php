@@ -1,0 +1,23 @@
+{
+    "family": "ecslabphp",
+    "containerDefinitions": [
+        {
+            "name": "ecslabphp",
+            "image": "%REPOSITORY_URI%:v_%BUILD_NUMBER%",
+            "cpu": 10,
+            "memory": 256,
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 0
+                }
+            ],
+            "entryPoint": [
+                "/usr/sbin/apache2",
+                "-D",
+                "FOREGROUND"
+            ],
+            "essential": true
+        }
+    ]
+}
