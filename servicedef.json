@@ -8,10 +8,10 @@
         "containerPort": 80
     }],
     "deploymentConfiguration": {
-        "maximumPercent": 100,
-        "minimumHealthyPercent": 200
+        "maximumPercent": 200,
+        "minimumHealthyPercent": 100
     },
     "healthCheckGracePeriodSeconds": 0,
-    "desiredCount": 10,
+    "desiredCount": 3,
     "role": "ecsServiceRole"
 }
