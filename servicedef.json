@@ -1,13 +1,17 @@
 {
-    "serviceName": "ecslabphpsvc",
-    "taskDefinition": "ecslabphp",
-    "loadBalancers": [
-        {
-            "loadBalancerName": "EC2Contai-EcsElast-S06278JGSJCM",
-            "containerName": "ecslabphp",
-            "containerPort": 80
-        }
-    ],
+    "cluster": "%CLUSTER%",
+    "serviceName": "%SERVICE_NAME%",
+    "taskDefinition": "%FAMILY%",
+    "loadBalancers": [{
+        "targetGroupArn": "%TG_ARN%",
+        "containerName": "ecslabphp",
+        "containerPort": 80
+    }],
+    "deploymentConfiguration": {
+        "maximumPercent": 100,
+        "minimumHealthyPercent": 200
+    },
+    "healthCheckGracePeriodSeconds": 0,
     "desiredCount": 10,
     "role": "ecsServiceRole"
 }

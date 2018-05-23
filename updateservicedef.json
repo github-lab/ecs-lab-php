@@ -1,0 +1,12 @@
+{
+    "cluster": "%CLUSTER%",
+    "service": "%SERVICE_NAME%",
+    "taskDefinition": "%FAMILY%:%REVISION%",
+    "deploymentConfiguration": {
+        "maximumPercent": 200,
+        "minimumHealthyPercent": 100
+    },
+    "healthCheckGracePeriodSeconds": 0,
+    "desiredCount": 3,
+    "forceNewDeployment": true
+}
