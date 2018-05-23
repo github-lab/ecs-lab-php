@@ -1,4 +1,4 @@
-FROM labphp5
+FROM 761602622223.dkr.ecr.cn-north-1.amazonaws.com.cn/labphp5
 
 # Install app
 RUN rm -rf /var/www/*
