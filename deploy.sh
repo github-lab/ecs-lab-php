@@ -4,7 +4,7 @@
 REGION="cn-north-1"
 TG_ARN="arn:aws-cn:elasticloadbalancing:cn-north-1:761602622223:targetgroup/ecslabphp-tg/cda96cf0d98bdcc1"
 REPOSITORY_NAME="ecs-lab-php"
-CLUSTER="ecs-guolianc"
+CLUSTER="ecs-cluster"
 FAMILY=`sed -n 's/.*"family": "\(.*\)",/\1/p' taskdef.json`
 FAMILY=${FAMILY:0:10}
 NAME=`sed -n 's/.*"name": "\(.*\)",/\1/p' taskdef.json`
